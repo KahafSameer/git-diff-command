@@ -5,3 +5,4 @@
 - [x] Create README.md with project description and usage instructions
 - [x] Test the app by running main.py
 ini
+adding to git for diff
