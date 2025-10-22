@@ -45,15 +45,15 @@ class TodoList:
                 self.save_tasks()
                 print(f"Task '{task['task']}' marked as completed.")
                 return
-        print("Task not found.")
+        print("Task not found in list.")
 
 def main():
     todo = TodoList()
     while True:
         print("\nTo-Do List App")
-        print("1. Add task")
+        print("1. Add new task")
         print("2. List tasks")
-        print("3. Remove task")
+        print("3. Remove the task")
         print("4. Mark task as completed")
         print("5. Exit")
         choice = input("Choose an option: ")
@@ -64,7 +64,7 @@ def main():
             todo.list_tasks()
         elif choice == '3':
             try:
-                task_id = int(input("Enter task ID to remove: "))
+                task_id = int(input("Enter task ID to remove the tast: "))
                 todo.remove_task(task_id)
             except ValueError:
                 print("Invalid ID.")
